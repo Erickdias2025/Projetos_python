@@ -16,4 +16,8 @@ while True:
             print(f"{numero} * {i:2} = {numero*i}")
         elif operador == "/":
             print(f"{numero} / {i:2} = {numero/i:.2f}")
-    break
+
+    repetir = input("DESEJA GERAR NOVAMENTE? (S, N): ").lower()
+    if repetir != "s":
+        print("ENCERRANDO O PROGRAMA..., ATÉ A PRÓXIMA!")
+        break
