@@ -15,5 +15,5 @@ while True:
         elif operador == "*":
             print(f"{numero} * {i:2} = {numero*i}")
         elif operador == "/":
-            print(f"{numero} / {i:2} = {numero/i}")
+            print(f"{numero} / {i:2} = {numero/i:.2f}")
     break
