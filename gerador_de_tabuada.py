@@ -1,3 +1,4 @@
+print("GERADOR DE TABUADA 💯")
 # LOOP DA TABUADA
 while True:
     try:
