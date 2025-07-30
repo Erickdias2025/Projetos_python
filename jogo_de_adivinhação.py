@@ -19,7 +19,7 @@ while True:
             print(
 
                 # MENSAGEM DE OCORRENÇIA INVÁLIDA
-                "\033[mENTRADA INVÁLIDA, TENTE APENAS NÚMEROS INTEIROS EX: 1, 5, 10\033[m")
+                "\033[mNÚMERO FORA DO INTERVALO! DIGITE ENTRE 1 E 10.\033[m")
             continue
 
         tentativas.append(escolha)  # ARMAZENADO AS QUANTIDADES DE TENTATIVAS
@@ -32,7 +32,7 @@ while True:
         elif escolha < maquina:  # OCORRÊNÇIA NUMERO 2 - JOGADOR CHUTA UM NÚMERO MENOR
             print("\033[31mQUASE LÁ!, TENTE UM NÚMERO MAIOR\033[m")
         else:  # OCORRÊNÇIA NUMERO 3 - JOGADOR ACERTA O NÚMERO
-            print("\033[32mPARÁBENS!, VOCÊ ACERTOOU!\033[m")
+            print("\033[32mPARABÉNS!, VOCÊ ACERTOOU!\033[m")
             break
 
         print("="*20)
