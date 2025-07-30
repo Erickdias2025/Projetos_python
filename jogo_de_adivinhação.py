@@ -2,6 +2,8 @@ from random import randint
 
 maquina = randint(1, 10)
 
+print("\033[33mJOGO DE ADIVINHAÇÃO\033[m")
+
 print("ESCOLHI UM NÚMERO ENTRE 1 E 10")
 print("CONSEGUE ADIVINHAR QUAL É?")
 while True:
