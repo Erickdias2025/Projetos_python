@@ -1,4 +1,5 @@
 from random import randint
+from time import sleep
 
 maquina = randint(1, 10)
 tentativas = []
@@ -17,10 +18,16 @@ while True:
     tentativas.append(escolha)
 
     if escolha > maquina:
+        print("GERANDO RESULTADO....")
+        sleep(1.5)
         print("\033[31mQUASE LÁ!, TENTE UM NÚMERO MENOR\033[m")
     elif escolha < maquina:
+        print("GERANDO RESULTADO....")
+        sleep(1.5)
         print("\033[31mQUASE LÁ!, TENTE UM NÚMERO MAIOR\033[m")
     else:
+        print("GERANDO RESULTADO....")
+        sleep(1.5)
         print("\033[32mPARÁBENS!, VOÇÊ ACERTOU!\033[m")
         break
 print(f"FORAM NECESSÁRIAS {len(tentativas)} TENTATIVA(S)")
