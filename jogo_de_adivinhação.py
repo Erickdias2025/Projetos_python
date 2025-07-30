@@ -1,6 +1,7 @@
 from random import randint
 
 maquina = randint(1, 10)
+tentativas = []
 
 print("\033[33mJOGO DE ADIVINHAÇÃO\033[m")
 
@@ -11,8 +12,9 @@ while True:
         escolha = int(input("TENTE UM NÚMERO ENTRE (1-10): "))
     except ValueError:
         print(
-            "\033[mENTRÁDA INVÁLIDA, TENTE APENAS NÚMEROS INTEIROS EX: 1, 5, 10\033[m")
+            "\033[mENTRADA INVÁLIDA, TENTE APENAS NÚMEROS INTEIROS EX: 1, 5, 10\033[m")
         continue
+    tentativas.append(escolha)
 
     if escolha > maquina:
         print("\033[31mQUASE LÁ!, TENTE UM NÚMERO MENOR\033[m")
@@ -21,3 +23,4 @@ while True:
     else:
         print("\033[32mPARÁBENS!, VOÇÊ ACERTOU!\033[m")
         break
+print(f"FORAM NECESSÁRIAS {len(tentativas)} TENTATIVA(S)")
